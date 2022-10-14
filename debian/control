@@ -1,0 +1,50 @@
+Source: node-liftoff
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , chai <!nocheck>
+ , mocha <!nocheck>
+ , node-extend <!nocheck>
+ , node-findup-sync <!nocheck>
+ , node-fined <!nocheck>
+ , node-flagged-respawn <!nocheck>
+ , node-for-own <!nocheck>
+ , node-is-plain-object (>= 5.0.0~) <!nocheck>
+ , node-kind-of <!nocheck>
+ , node-lodash-packages <!nocheck>
+ , node-rechoir <!nocheck>
+ , node-resolve <!nocheck>
+ , node-sinon <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-liftoff
+Vcs-Git: https://salsa.debian.org/js-team/node-liftoff.git
+Homepage: https://github.com/js-cli/js-liftoff
+Rules-Requires-Root: no
+
+Package: node-liftoff
+Architecture: all
+Depends: ${misc:Depends}
+ , node-extend
+ , node-findup-sync
+ , node-fined
+ , node-flagged-respawn
+ , node-for-own
+ , node-is-plain-object (>= 5.0.0~)
+ , node-kind-of
+ , node-lodash-packages
+ , node-rechoir
+ , node-resolve
+Provides: ${nodejs:Provides}
+Description: command line tool launcher
+ Node.js module to make it easy for globally installed binaries
+ to find and load a local installation, no matter what version it is,
+ using a search algorithm similar to how node finds modules.
+ .
+ Supports intelligent filesystem traversal if the command is run in
+ a sub-folder of the  project, and explicit directory specification.
+ .
+ Node.js is an event-based server-side JavaScript engine.

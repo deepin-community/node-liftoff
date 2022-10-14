@@ -1,0 +1,101 @@
+node-liftoff (3.1.0-6) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Drop unneeded dependency versioned constraints
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sat, 06 Nov 2021 15:43:26 +0100
+
+node-liftoff (3.1.0-5) experimental; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete field Contact from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add ctype=nodejs to component(s)
+  * Use dh-sequence-nodejs
+  * Add fix for node-is-plain-object ≥ 5
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 15 Dec 2020 08:53:45 +0100
+
+node-liftoff (3.1.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Add dependency to node-for-own, node-is-plain-object and node-kind-of
+    (fixes debci and babel build)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 29 Dec 2019 06:10:21 +0100
+
+node-liftoff (3.1.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Add missing pristine-tar files
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 19 Nov 2019 22:40:27 +0100
+
+node-liftoff (3.1.0-2) experimental; urgency=medium
+
+  * Team upload
+  * Tighten dependency on node-flagged-respawn
+  * Add copyright of embedded modules
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 28 May 2019 00:24:28 +0530
+
+node-liftoff (3.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * New upstream release
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Pirate Praveen ]
+  * New upstream version 3.1.0
+  * Drop dependency on dh-buildinfo (not required from compat 10)
+  * Update patches
+  * Add object.map and make-iterator modules using multiple tarballs
+  * Set absolute NODE_PATH in d/rules
+  * Disable failing tests temporarily
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 27 May 2019 00:20:43 +0530
+
+node-liftoff (2.3.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Switch tests to pkg-js-tools and increase timeout (Closes: #853035)
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Change section to javascript
+  * Fix VCS fields
+  * Fix d/copyright
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 20 Feb 2019 20:39:06 +0100
+
+node-liftoff (2.3.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Relax node-liftoff (Closes: #849753)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 30 Dec 2016 20:56:49 +0530
+
+node-liftoff (2.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #847916)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Mon, 12 Dec 2016 10:47:13 +0000

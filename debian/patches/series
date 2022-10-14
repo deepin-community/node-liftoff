@@ -1,0 +1,3 @@
+00-node_modules.diff
+01-disable-coffe-tests.patch
+fix-for-node-is-plain-object-5.patch
